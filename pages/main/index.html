@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>Book Shop</title>
+   <link rel="stylesheet" href="./style.css" />
+
+   <!-- Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;600;700&display=swap" rel="stylesheet">
+
+   <!-- Кодировка страницы -->
+   <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+   <meta name="viewport" content="width=device-width">
+
+</head>
+
+<body>
+   <header class="header">
+      <div class="content">
+         <div class="header-body">
+            <div class="header-logo">
+               <a href="./index.html">
+                  <img src="../../assets/icons/bookShopLogo2.png" alt="BookShop logo">
+               </a>
+            </div>
+            <ul class="nav-items">
+               <li class="nav-item active"><a href="">Home</a></li>
+               <li class="active-hover-animation nav-item "><a href="#book-section">Book Catalog</a></li>
+               <li class="active-hover-animation nav-item"><a href="">Gift Cards</a></li>
+               <li class="active-hover-animation nav-item"><a href="">About</a></li>
+               <li class="active-hover-animation nav-item"><a href="">Contact</a></li>
+               <li class="active-hover-animation nav-item"><a href="">Log in</a></li>
+               <li class="register-button nav-item "><a href="">Register</a></li>
+            </ul>
+         </div>
+      </div>
+   </header>
+
+   <div class="main-block">
+      <div class="main-page">
+         <div class="content main-page-content">
+            <div class="main-page-body">
+               <div class="main-left-side">
+                  <h1>Welcome to
+                     amazing book shop</h1>
+                  <a href="#book-section" class="main-button">Select books</a>
+               </div>
+               <div class="main-right-side">
+                  <img src="../../assets/images/main-page-bg.png" alt="main-page-illustration">
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <section class="book-section" id="book-section">
+      <div class="content">
+         <div class="book-section-body">
+            <div class="book-catalog">
+               <h2 class="title2">Book Catalog</h2>
+               <div class="cards">
+
+                  <div class="card" data-id="01">
+                     <img class="product-img" src="../../assets/images/book covers/01.jpg" alt="Douglas Crockford">
+                     <div class="card-body">
+                        <div class="card-text-block">
+                           <h5 class="item-author">Douglas Crockford</h5>
+                           <h4 class="item-title">
+                              JavaScript: The Good Parts
+                           </h4>
+                           <div class="price">
+                              <p class="item-price-title">Price:</p>
+                              <p class="item-price">30</p>
+                           </div>
+                           <div class="counter-block">
+                              <div class="counter-minus" data-action="minus">-</div>
+                              <div class="counter-current" data-counter>1</div>
+                              <div class="counter-plus" data-action="plus">+</div>
+                           </div>
+                        </div>
+                        <div class="card-buttons">
+                           <button class="show-more">Show more</button>
+                           <button data-cart class="add-to-bag">Add to bag</button>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="card" data-id="02">
+                     <img class="product-img" src="../../assets/images/book covers/02.jpg"
+                        alt="Effective JavaScript: 68 Specific Ways to Harness the Power of JavaScript">
+                     <div class="card-body">
+                        <div class="card-text-block">
+                           <h5 class="item-author">David Herman</h5>
+                           <h4 class="item-title">
+                              Effective JavaScript: 68 Specific Ways to Harness the Power of JavaScript
+                           </h4>
+                           <div class="price">
+                              <p class="item-price-title">Price:</p>
+                              <p class="item-price">22</p>
+                           </div>
+                           <div class="counter-block">
+                              <div class="counter-minus" data-action="minus">-</div>
+                              <div class="counter-current" data-counter>1</div>
+                              <div class="counter-plus" data-action="plus">+</div>
+                           </div>
+                        </div>
+                        <div class="card-buttons">
+                           <button class="show-more">Show more</button>
+                           <button data-cart class="add-to-bag">Add to bag</button>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="card" data-id="01">
+                     <img class="product-img" src="../../assets/images/book covers/02.jpg"
+                        alt="Effective JavaScript: 68 Specific Ways to Harness the Power of JavaScript">
+                     <div class="card-body">
+                        <div class="card-text-block">
+                           <h5 class="item-author">David Herman</h5>
+                           <h4 class="item-title">
+                              Effective JavaScript: 68 Specific Ways to Harness the Power of JavaScript
+                           </h4>
+                           <div class="price">
+                              <p class="item-price-title">Price:</p>
+                              <p class="item-price">22</p>
+                           </div>
+                        </div>
+                        <div class="card-buttons">
+                           <button class="show-more">Show more</button>
+                           <button class="add-to-bag">Add to bag</button>
+                        </div>
+                     </div>
+                  </div>
+
+
+               </div>
+            </div>
+            <div class="order-books">
+               <h2 class="title2">Order Books</h2>
+               <div class="order-books-body">
+                  <div class="order-cards">
+
+
+                  </div>
+
+                  <div class="order-buttons">
+                     <div data-cart-empty class="empty-bag">
+                        <p class="total-title">Cart is empty</p>
+                     </div>
+                     <div class="line-under-total"></div>
+                     <div class="total-block">
+                        <p class="total-title">Total: </p>
+                        <p class="total">0</p>
+                     </div>
+                     <div class="order-button">
+                        <button class="order">Order</button>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+   </section>
+
+   <script src="./bag-is-empty.js"></script>
+   <script src="./counter.js"></script>
+   <script src="./clear-button-in-orders.js"></script>
+   <script src="./book-card.js"></script>
+</body>
+
+</html>
