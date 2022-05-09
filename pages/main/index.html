@@ -62,79 +62,7 @@
          <div class="book-section-body">
             <div class="book-catalog">
                <h2 class="title2">Book Catalog</h2>
-               <div class="cards">
-
-                  <div class="card" data-id="01">
-                     <img class="product-img" src="../../assets/images/book covers/01.jpg" alt="Douglas Crockford">
-                     <div class="card-body">
-                        <div class="card-text-block">
-                           <h5 class="item-author">Douglas Crockford</h5>
-                           <h4 class="item-title">
-                              JavaScript: The Good Parts
-                           </h4>
-                           <div class="price">
-                              <p class="item-price-title">Price:</p>
-                              <p class="item-price">30</p>
-                           </div>
-                           <div class="counter-block">
-                              <div class="counter-minus" data-action="minus">-</div>
-                              <div class="counter-current" data-counter>1</div>
-                              <div class="counter-plus" data-action="plus">+</div>
-                           </div>
-                        </div>
-                        <div class="card-buttons">
-                           <button class="show-more">Show more</button>
-                           <button data-cart class="add-to-bag">Add to bag</button>
-                        </div>
-                     </div>
-                  </div>
-
-                  <div class="card" data-id="02">
-                     <img class="product-img" src="../../assets/images/book covers/02.jpg"
-                        alt="Effective JavaScript: 68 Specific Ways to Harness the Power of JavaScript">
-                     <div class="card-body">
-                        <div class="card-text-block">
-                           <h5 class="item-author">David Herman</h5>
-                           <h4 class="item-title">
-                              Effective JavaScript: 68 Specific Ways to Harness the Power of JavaScript
-                           </h4>
-                           <div class="price">
-                              <p class="item-price-title">Price:</p>
-                              <p class="item-price">22</p>
-                           </div>
-                           <div class="counter-block">
-                              <div class="counter-minus" data-action="minus">-</div>
-                              <div class="counter-current" data-counter>1</div>
-                              <div class="counter-plus" data-action="plus">+</div>
-                           </div>
-                        </div>
-                        <div class="card-buttons">
-                           <button class="show-more">Show more</button>
-                           <button data-cart class="add-to-bag">Add to bag</button>
-                        </div>
-                     </div>
-                  </div>
-
-                  <div class="card" data-id="01">
-                     <img class="product-img" src="../../assets/images/book covers/02.jpg"
-                        alt="Effective JavaScript: 68 Specific Ways to Harness the Power of JavaScript">
-                     <div class="card-body">
-                        <div class="card-text-block">
-                           <h5 class="item-author">David Herman</h5>
-                           <h4 class="item-title">
-                              Effective JavaScript: 68 Specific Ways to Harness the Power of JavaScript
-                           </h4>
-                           <div class="price">
-                              <p class="item-price-title">Price:</p>
-                              <p class="item-price">22</p>
-                           </div>
-                        </div>
-                        <div class="card-buttons">
-                           <button class="show-more">Show more</button>
-                           <button class="add-to-bag">Add to bag</button>
-                        </div>
-                     </div>
-                  </div>
+               <div class="cards" id="products-container">
 
 
                </div>
@@ -166,6 +94,7 @@
          </div>
    </section>
 
+   <script src="./renderProducts.js"></script>
    <script src="./calcCartPrice.js"></script>
    <script src="./bag-is-empty.js"></script>
    <script src="./counter.js"></script>
