@@ -164,6 +164,39 @@ body{
   align-items: center;
   margin-left: 20px;
 }
+
+.booking-cart a{
+  display: block;
+  position: relative;
+  /* width: 33px;
+  height: 33px; */
+  margin-right: 20px;
+  
+  
+}
+.booking-cart-count{
+  position: absolute;
+  top: -18px;
+  right: -18px;
+  width: 33px;
+  height: 33px;
+
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  padding-top: 5px;
+  text-align: center;
+
+  min-width: 24px;
+  min-height: 24px;
+  background: #0981E6;
+  border: 3px solid #FFFFFF;
+  border-radius: 50%;
+}
+
 .nav-item a{
   font-size: 16px;
   line-height: 18px;
@@ -219,8 +252,6 @@ transform-origin: bottom left;
 }
 .main-page{
   margin: 0 15px;
-}
-.main-page-content {
 }
 .main-page-body {
   max-width: 1157px;
@@ -598,11 +629,13 @@ transform-origin: bottom left;
   margin-left: 4px;
 }
 /*-------End of Order Cards-------------*/
-
-
 /*-------End of Order Books-------------*/
-
-
-
 /*-------End of Book section-------------*/
+
+
+
+/*-------Modal Window-------------*/
+
+/*-------End of Modal Window-------------*/
+
 

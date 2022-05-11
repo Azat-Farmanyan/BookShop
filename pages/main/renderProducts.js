@@ -34,7 +34,7 @@ function renderProducts(productsArray) {
                            </div>
                         </div>
                         <div class="card-buttons">
-                           <button class="show-more">Show more</button>
+                           <button showMore class="show-more">Show more</button>
                            <button data-cart class="add-to-bag">Add to bag</button>
                         </div>
                      </div>
