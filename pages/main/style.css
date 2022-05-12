@@ -141,6 +141,9 @@ body{
 }
 /*-------Header-------------*/
 .header {
+  /* position: sticky; */
+  /* top: 30px; */
+  margin: 0 auto;
   padding: 0 15px;
   background: #F1F7FF;
 }
@@ -635,7 +638,9 @@ transform-origin: bottom left;
 
 
 /*-------Modal Window-------------*/
-
+.modal{
+  display: none;
+}
 /*-------End of Modal Window-------------*/
 
 

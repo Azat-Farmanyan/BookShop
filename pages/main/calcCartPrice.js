@@ -4,7 +4,7 @@ function calcCartPrice() {
    const totalPriceEl = document.querySelector('.total')
 
    const shoppingCard = document.querySelector('.booking-cart-count')
-   console.log(shoppingCard);
+   // console.log(shoppingCard);
    let totalPrice = 0
    let summaryAmountOfOrderBooks = []
    cartItems.forEach(item => {
