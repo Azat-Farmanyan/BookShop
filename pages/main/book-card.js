@@ -25,28 +25,28 @@ window.addEventListener('click', function (event) {
          counterElement.innerText = parseInt(counterElement.innerText) + parseInt(productInfo.counter)
       } else {
          const cartItemHTML = `
-      <div class="order-card" data-id="${productInfo.id}">
-      <img class="order-product-img" src="${productInfo.imgScr}" alt="">
-      <div class="order-card-text-box">
-         <div class="clear-button" href="#">
-            <img clear class="clear-logo" src="../../assets/icons/clear-logo.png" alt="clear logo">
+         <div class="order-card" data-id="${productInfo.id}">
+         <img class="order-product-img" src="${productInfo.imgScr}" alt="">
+         <div class="order-card-text-box">
+            <div class="clear-button" href="#">
+               <img clear class="clear-logo" src="../../assets/icons/clear-logo.png" alt="clear logo">
+            </div>
+            <h4 class="order-item-title">
+                ${productInfo.title}
+            </h4>
+            <div class="counter-block">
+                  <div class="counter-minus" data-action="minus">-</div>
+                  <div class="counter-current" data-counter>${productInfo.counter}</div>
+                  <div class="counter-plus" data-action="plus">+</div>
+                </div>
+            <div class="order-item-price-block">
+               <p class="order-item-price-title">
+                  Price of one book:
+               </p>
+               <p class="order-item-price">${productInfo.price}</p>
+            </div>
          </div>
-         <h4 class="order-item-title">
-             ${productInfo.title}
-         </h4>
-         <div class="counter-block">
-               <div class="counter-minus" data-action="minus">-</div>
-               <div class="counter-current" data-counter>${productInfo.counter}</div>
-               <div class="counter-plus" data-action="plus">+</div>
-             </div>
-         <div class="order-item-price-block">
-            <p class="order-item-price-title">
-               Price:
-            </p>
-            <p class="order-item-price">${productInfo.price}</p>
-         </div>
-      </div>
-        </div>`
+           </div>`
          // Если нет, добавляем товар в корзину
          orderCards.insertAdjacentHTML('beforeend', cartItemHTML)
       }

@@ -1,0 +1,52 @@
+Header
+_______________
+
+   <header class="header">
+      <div class="content">
+         <div class="header-body">
+            <div class="header-logo">
+               <a href="./index.html">
+                  <img src="../../assets/icons/bookShopLogo2.png" alt="BookShop logo">
+               </a>
+            </div>
+            <ul class="nav-items">
+               <li class="nav-item active"><a href="">Home</a></li>
+               <li class="active-hover-animation nav-item "><a href="#book-section">Book Catalog</a></li>
+               <li class="active-hover-animation nav-item"><a href="">Gift Cards</a></li>
+               <li class="active-hover-animation nav-item"><a href="">About</a></li>
+               <li class="active-hover-animation nav-item"><a href="">Contact</a></li>
+               <li class="active-hover-animation nav-item"><a href="">Log in</a></li>
+               <li class="register-button nav-item "><a href="">Register</a></li>
+               <li class="nav-item booking-cart">
+                  <a href="">
+                     <img src="../../assets/icons/shopping-cart.png" alt="booking cart logo">
+                     <div class="booking-cart-count">0</div>
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </header>
+_______________
+
+
+
+Main Page
+_______________
+   <div class="main-block">
+      <div class="main-page">
+         <div class="content main-page-content">
+            <div class="main-page-body">
+               <div class="main-left-side">
+                  <h1>Welcome to
+                     amazing book shop</h1>
+                  <a href="#book-section" class="main-button">Select books</a>
+               </div>
+               <div class="main-right-side">
+                  <img src="../../assets/images/main-page-bg.png" alt="main-page-illustration">
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+_______________

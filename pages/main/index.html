@@ -19,53 +19,9 @@
 
 <body>
    <script src="./createHeader.js"></script>
-
-   <!-- <header class="header">
-      <div class="content">
-         <div class="header-body">
-            <div class="header-logo">
-               <a href="./index.html">
-                  <img src="../../assets/icons/bookShopLogo2.png" alt="BookShop logo">
-               </a>
-            </div>
-            <ul class="nav-items">
-               <li class="nav-item active"><a href="">Home</a></li>
-               <li class="active-hover-animation nav-item "><a href="#book-section">Book Catalog</a></li>
-               <li class="active-hover-animation nav-item"><a href="">Gift Cards</a></li>
-               <li class="active-hover-animation nav-item"><a href="">About</a></li>
-               <li class="active-hover-animation nav-item"><a href="">Contact</a></li>
-               <li class="active-hover-animation nav-item"><a href="">Log in</a></li>
-               <li class="register-button nav-item "><a href="">Register</a></li>
-               <li class="nav-item booking-cart">
-                  <a href="">
-                     <img src="../../assets/icons/shopping-cart.png" alt="booking cart logo">
-                     <div class="booking-cart-count">0</div>
-                  </a>
-               </li>
-            </ul>
-         </div>
-      </div>
-   </header> -->
-
-
    <script src="./createMainPage.js"></script>
 
-   <!-- <div class="main-block">
-      <div class="main-page">
-         <div class="content main-page-content">
-            <div class="main-page-body">
-               <div class="main-left-side">
-                  <h1>Welcome to
-                     amazing book shop</h1>
-                  <a href="#book-section" class="main-button">Select books</a>
-               </div>
-               <div class="main-right-side">
-                  <img src="../../assets/images/main-page-bg.png" alt="main-page-illustration">
-               </div>
-            </div>
-         </div>
-      </div>
-   </div> -->
+
 
    <section class="book-section" id="book-section">
       <div class="content">
@@ -74,6 +30,51 @@
                <h2 class="title2">Book Catalog</h2>
                <div class="cards" id="products-container">
 
+                  <div class="card" data-id="${item.id}">
+                     <img class="product-img" src="${item.imageLink}" alt="Douglas Crockford">
+                     <div class="card-body">
+
+                        <div class="modal-block">
+                           <div class="modal-body">
+                              <div class="modal-title">
+                                 With JavaScript: The Good Parts,
+                              </div>
+                              <div class="modal-text">
+                                 you'll discover a beautiful, elegant, lightweight and highly expressive language that
+                                 lets
+                                 you create effective code, whether you're managing object libraries or just trying to
+                                 get
+                                 Ajax to run fast. If you develop sites or applications for the Web, this book is an
+                                 absolute must
+                              </div>
+                           </div>
+
+                           <button class="close-modal">
+                              <p>Close</p>
+                           </button>
+                        </div>
+
+                        <div class="card-text-block">
+                           <h5 class="item-author">${item.author}</h5>
+                           <h4 class="item-title">
+                              ${item.title}
+                           </h4>
+                           <div class="price">
+                              <p class="item-price-title">Price:</p>
+                              <p class="item-price">${item.price}</p>
+                           </div>
+                           <div class="counter-block">
+                              <div class="counter-minus" data-action="minus">-</div>
+                              <div class="counter-current" data-counter>1</div>
+                              <div class="counter-plus" data-action="plus">+</div>
+                           </div>
+                        </div>
+                        <div class="card-buttons">
+                           <button showMore class="show-more">Show more</button>
+                           <button data-cart class="add-to-bag">Add to bag</button>
+                        </div>
+                     </div>
+                  </div>
 
                </div>
             </div>

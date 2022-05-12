@@ -459,7 +459,7 @@ transform-origin: bottom left;
   justify-content: space-between;
 }
 .show-more {
-  border: 2px solid #0981E6;
+  border: 1px solid #0981E6;
   border-radius: 5px;
   padding: 7px 12px;
   margin-bottom: 9px;
@@ -638,9 +638,52 @@ transform-origin: bottom left;
 
 
 /*-------Modal Window-------------*/
-.modal{
+.modal-block{
   display: none;
 }
+
+.modal-title{
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #0981E6;
+}
+.modal-text{
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #181818;
+}
+
+.close-modal{
+  background: #FFFFFF;
+  border: 1px solid #0981E6;
+  border-radius: 5px;
+  padding: 7px 15px;
+  min-width: 120px;
+  color: #0981E6;
+  transition: all 0.5s all;
+}
+.close-modal p{
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+}
+.close-modal:hover{
+  background: #0981E6;
+  border: 1px solid #0981E6;
+  box-shadow: 0px 0px 4px #0981E6;
+  border-radius: 5px;
+  color: #FFFFFF;
+}
+
 /*-------End of Modal Window-------------*/
 
 
