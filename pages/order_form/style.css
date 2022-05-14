@@ -247,451 +247,88 @@ transform-origin: bottom left;
 }
 /*-------End of Header-------------*/
 
-/*-------Main page-------------*/
-.main-block{
-  background: url('../../assets/images/left\ blue\ object.png') bottom left / 298px 220px no-repeat,
-  url('../../assets/images/right\ blue\ object.png') bottom right / 553px 326px no-repeat;
-  min-height: 600px;
-}
+
+/*-------Order form-------------*/
 .main-page{
-  margin: 0 15px;
+  background: url('../../assets/images/order_form_bg/right\ blue\ object\ 1.png ') bottom left / 298px 220px no-repeat,
+  url('../../assets/images/order_form_bg/left\ blue\ object\ 1.png') bottom right / 553px 326px no-repeat;
+  min-height: 730px;
 }
-.main-page-body {
-  max-width: 1157px;
-  margin: 122px auto 0;
-  padding-bottom: 73px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.order-form{
+  margin-bottom: 60px;
 }
-.main-left-side h1{
+.order-form-title{
   font-family: 'Roboto Slab';
-  font-weight: 500;
-  font-size: 48px;
-  line-height: 63px;
-  color: #0981E6;
-  max-width: 457px;
-  margin-bottom: 27px;
-}
-.main-left-side a{
-  display: block;
-  max-width: 196px;
-}
-.main-left-side button{
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
-  
-  color: #FFFFFF;
-}
-.main-button {
-  padding: 15px 35px;
-  min-height: 51px;
-  color: #FFFFFF;
-  background: #0981E6;
   font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
-  /* box-shadow: 3px 4px 11px #B3DCFF; */
-  border-radius: 20px;
-  
-  transition: all 0.5s ease;
-}
-.main-button:hover {
-  box-shadow: 0px 0px 15px #47ABFF;
-}
-.main-right-side img{
-  max-width: 641px;
-}
-
-/*-------End of Main page-------------*/
-
-/*-------Book section-------------*/
-.book-section{
-  margin-top: 63px;
-}
-.book-section-body{
-  display: flex;
-  justify-content: space-between;
-  margin: 0 15px;
-}
-.book-catalog{
-  min-width: 843px;
-}
-.order-books{
-  max-width: 407px;
-}
-.title2{
-  font-family: 'Roboto Slab';
   font-weight: 500;
   font-size: 35px;
   line-height: 46px;
   text-align: center;
+
   color: #0981E6;
-  margin-bottom: 44px;
+  margin: 30px 0;
 }
-.cards{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-/*-------Card (book catalog)-------------*/
-.card {
-  /* width: 100%; */
-  min-width: 407px;
-  min-height: 300px;
-  padding: 27px;
-  margin-bottom: 29px;
-  background: linear-gradient(301.4deg, #FFFFFF -1.77%, rgba(255, 255, 255, 0.38) 123.23%);
-  border: 1px solid rgba(9, 129, 230, 0.17);
+.order-form-block{
+  background: rgba(241, 247, 255, 0.5);
+  border: 1px solid rgba(9, 129, 230, 0.15);
   border-radius: 10px;
 
-  display: flex;
-  justify-content: space-between;
-  transition: all 0.5s ease;
+  max-width: 700px;
+  /* min-height: 604px; */
 
-  /* align-items: flex-start; */
-}
-.card:hover {
-  background: linear-gradient(301.4deg, #F1F7FF -1.77%, rgba(241, 247, 255, 0.38) 123.23%);
-  border: 1px solid rgba(9, 129, 230, 0.29);
-  box-shadow: 5px 5px 15px rgba(9, 129, 230, 0.25);
-}
-.product-img {
-  display: block;
-  max-width: 161px;
-  max-height: 247px;
-  /* margin-right: 20px; */
-}
-.card-body {
-  max-width: 177px;
+  margin: 0 auto ;
+  padding: 15px 50px 35px;
+
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
 }
-.item-author{
-  display: block;
-  font-family: 'Roboto Slab';
-  font-size: 16px;
-  line-height: 21px;
-  color: #181818;
-  margin-bottom: 18px;
-}
-.item-title {
-  display: block;
+
+.input-title h3{
   font-family: 'Roboto Slab';
   font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
-  color: #0981E6;
-  margin-bottom: 18px;
-}
-
-.counter-block{
-  min-width: 76px;
-  min-height: 20px;
-  display: flex;
-  margin-bottom: 9px;
-}
-.counter-minus,
-.counter-current,
-.counter-plus{
-  min-width: 26px;
-  border: 2px solid #96d0ff;
-  border-radius: 0px;
-  text-align: center;
-  padding: 6px 5px;
-  color: #0981E6;
+  font-weight: 400;
   font-size: 18px;
-  font-weight: 600;
+  line-height: 24px;
+
+  color: #0981E6;
+
+  display: block;
+  margin-left: 16px;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+.input{
+  padding: 11px 15px;
+
+  background: #FFFFFF;
+  border: 1px solid rgba(9, 129, 230, 0.2);
+  border-radius: 10px;
+
+  height: 44px;
+  min-width: 350px;
+
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+
+  color: #0981E6;
 
   transition: all 0.5s ease;
 }
-.counter-minus{
-  border-right: 0;
-  border-radius: 5px 0px 0px 5px;
-  cursor: pointer;
-
-}
-.counter-plus{
-  border-left: 0;
-  border-radius: 0px 5px 5px 0px;
-  cursor: pointer;
-
-}
-.counter-minus:hover,
-.counter-plus:hover{
-  background-color: #0981E6;
-  color: #FFFFFF;
-}
-.price{
-  min-height: 29px;
-  margin-bottom: 18px;
-}
-.item-price-title {
-  display: inline-block;
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
-  padding-bottom: 3px;
-  margin-right: 4px;
-  
-  color: #181818;
-}
-.item-price {
-  display: inline-block;
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 33px;
-
-  color: #181818;
-
-}
-.card-buttons{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.show-more {
+.input:focus{
+  background: #FFFFFF;
+  box-shadow: inset 3px 3px 3px rgba(9, 129, 230, 0.25);
+  border-radius: 10px;
   border: 1px solid #0981E6;
-  border-radius: 5px;
-  padding: 7px 12px;
-  margin-bottom: 9px;
-  background-color: #FFFFFF;
-
-
-  font-family: 'Arial';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  text-align: center;
-
-  color: #0981E6;
-  transition: all 0.5s ease;
 }
-.show-more:hover {
-  box-shadow: 5px 5px 5px rgba(9, 129, 230, 0.25);
-}
-.add-to-bag {
-  padding: 7px 12px;
-  background: #0981E6;
-  border-radius: 5px;
-
-  font-family: 'Arial';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  text-align: center;
-
-  color: #FFFFFF;
-  transition: all 0.2s ease;
-}
-.add-to-bag:hover{
-  box-shadow: 5px 5px 15px rgba(0, 76, 138, 0.25);
-}
-.add-to-bag:active{
-  /* border: 2px solid #0981E6; */
-  background: #005194;
-  border-radius: 5px;
-}
-/*-------End of Card (book catalog)-------------*/
-
-
-
-/*-------Order Books-------------*/
-.order-books{
-  min-width: 407px;
-  margin-left: 29px;
-}
-.order-books-body{
-  background: #F1F7FF;
-  border-radius: 10px;
-  padding: 30px;
+.input::placeholder{
+  color: rgba(9, 129, 230, 0.4);
 }
 
-.line-under-total{
-  width: 100%;
-  height: 10px;
-  background: #FFFFFF;
-  border-radius: 10px;
-  margin: 20px auto;
-}
-.total-block{
-  display: flex;
-  background: #FFFFFF;
-  box-shadow: inset 4px 4px 4px rgba(9, 129, 230, 0.25);
-  /* box-shadow: 5px 5px 15px rgba(9, 129, 230, 0.1); */
-  border-radius: 10px;
-  width: 100%;
-  min-height: 53px;
-  padding: 15px;
-  margin-bottom: 20px;
-}
-.total-title, .total{
-  font-family: 'Arial';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 28px;
-
-  color: #0981E6;
-}
-.order{
-  font-family: 'Arial';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
-
-  color: #FFFFFF;
-  width: 100%;
-
-  background: #0981E6;
-  box-shadow: 5px 5px 15px rgba(9, 129, 230, 0.1);
-  border-radius: 10px;
-
-  width: 100%;
-  min-height: 53px;
-  transition: all 0.5s ease;
-}
-.order:hover{
-  box-shadow: 5px 5px 15px rgba(9, 129, 230, 0.56);
-}
-/*-------Order Cards-------------*/
-.order-card {
-  position: relative;
-
-  min-height: 167px;
-  display: flex;
-
-  background: #FFFFFF;
-  box-shadow: inset 0px 4px 4px rgba(0, 29, 53, 0.09);
-  border-radius: 10px;
-  padding: 16px 24px;
-
-  margin-bottom: 20px;
-
-  transition: all 0.5s ease;
-}
-.order-card:hover {
-  box-shadow: 5px 5px 15px rgba(9, 129, 230, 0.1);
-}
-.order-product-img {
-  height: 135px;
-  width:  88px;
-  margin-right: 19px;
-  /* object-fit: contain; */
-}
-.clear-button{
-  position: absolute;
-  right: 15px;
-
-  display: flex;
-  justify-content: right;
-  cursor: pointer;
-}
-.order-item-author{
-  max-width: 150px;
-  font-size: 14px;
-  margin-bottom: 6px;
-}
-.order-item-title {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-
-  color: #0981E6;
-  margin-bottom: 15px;
-}
-
-.order-item-price-block {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-}
-.order-item-price-title {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
-  padding-bottom: 3px;
-  color: #181818;
-}
-.order-item-price {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 33px;
-
-  color: #181818;
-  margin-left: 4px;
-}
-/*-------End of Order Cards-------------*/
-/*-------End of Order Books-------------*/
-/*-------End of Book section-------------*/
 
 
 
-/*-------Modal Window-------------*/
-.modal-block{
-  display: none;
-}
-
-.modal-title{
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
-  color: #0981E6;
-}
-.modal-text{
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
-  color: #181818;
-}
-
-.close-modal{
-  background: #FFFFFF;
-  border: 1px solid #0981E6;
-  border-radius: 5px;
-  padding: 7px 15px;
-  min-width: 120px;
-  color: #0981E6;
-  transition: all 0.5s all;
-}
-.close-modal p{
-  font-family: 'Arial';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  text-align: center;
-}
-.close-modal:hover{
-  background: #0981E6;
-  border: 1px solid #0981E6;
-  box-shadow: 0px 0px 4px #0981E6;
-  border-radius: 5px;
-  color: #FFFFFF;
-}
-
-/*-------End of Modal Window-------------*/
-
+/*-------End of Order form-------------*/
 
