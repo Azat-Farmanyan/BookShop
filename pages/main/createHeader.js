@@ -55,7 +55,7 @@ navItems.append(bookCatalog)
 const giftCards = document.createElement('li')
 giftCards.className = ('active-hover-animation nav-item')
 const giftCardsLink = document.createElement('a')
-giftCardsLink.href = ''
+giftCardsLink.href = 'https://azat-farmanyan.github.io/BookShop/pages/order_form/'
 giftCardsLink.innerText = 'Orders'
 giftCards.append(giftCardsLink)
 navItems.append(giftCards)
