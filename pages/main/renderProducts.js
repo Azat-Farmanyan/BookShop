@@ -1,11 +1,11 @@
 const productsContainer = document.querySelector('#products-container')
 getProducts()
-
+let productsArray = []
 async function getProducts() {
    const response = await fetch('./product.json')
    // console.log(response);
 
-   const productsArray = await response.json()
+   productsArray = await response.json()
    // console.log(productsArray);
 
    renderProducts(productsArray)
@@ -13,9 +13,9 @@ async function getProducts() {
 
 
 function renderProducts(productsArray) {
-   productsArray.forEach(item => {
+   productsArray.forEach((item, i) => {
       const productHTML = `
-      <div class="card" data-id="${item.id}">
+      <div  class="card" data-id="${item.id}">
                      <img class="product-img" src="${item.imageLink}" alt="Douglas Crockford">
                      <div class="card-body">
                         <div class="card-text-block">
@@ -43,3 +43,35 @@ function renderProducts(productsArray) {
       productsContainer.insertAdjacentHTML('beforeend', productHTML)
    });
 }
+function renderModal(elem) {
+   const htmlElement = `<div class="modal-block">
+   <div class="modal-body">
+      <h5 class="item-author order-item-author">${elem.author}</h5>
+
+      <div class="modal-title">
+        ${elem.title}
+      </div>
+      <div class="modal-text">
+        ${elem.description}
+      </div>
+      <button closeModal class="close-modal" id="close-modal">
+         <p closeModal>Close</p>
+      </button>
+   </div>
+   
+</div>`
+   document.body.insertAdjacentHTML('beforeend', htmlElement)
+}
+window.addEventListener('click', function (event) {
+   if (event.target.hasAttribute('showMore')) {
+      const card = event.target.closest('.card')
+      console.log(card.dataset.id)
+      const elem = productsArray.find(el => el.id == card.dataset.id)
+      renderModal(elem)
+   }
+
+   if (event.target.hasAttribute("closeModal")) {
+      const card = document.querySelector('.modal-block')
+      document.body.removeChild(card)
+   }
+})
