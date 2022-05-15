@@ -46,26 +46,28 @@
          </div>
       </div>
    </header>
-
    <div class="main-page">
       <div class="content">
          <div class="order-form">
             <h2 class="order-form-title">Order form</h2>
-            <div class="order-form-block">
+            <form class="order-form-block">
+
                <div class="left-side">
 
                   <div class="name">
                      <div class="input-title">
                         <h3>Name</h3>
                      </div>
-                     <input placeholder="Enter your name" name="name" class="input" type="text">
+                     <input placeholder="Enter your name" name="name" id="input-name" class="input" type="text"
+                        required>
                   </div>
 
                   <div class="surname">
                      <div class="input-title">
                         <h3>Surname</h3>
                      </div>
-                     <input placeholder="Enter your surname" name="surname" class="input" type="text">
+                     <input placeholder="Enter your surname" id="input-surname" name="surname" class="input"
+                        type="text">
                   </div>
 
                   <div class="delivery-date">
@@ -98,58 +100,56 @@
                </div>
 
                <div class="right-side">
-                  <form action="#">
+                  <div class="input-title">
+                     <h3>Choose 2 gifts:</h3>
+                  </div>
+                  <div class="gift-block">
+                     <label class="checkbox-body">
+                        <input class="gift-checkbox" type="checkbox" name="languages" value="HTML">
+                        <img src="../../assets/icons/fontisto_shopping-package.png" alt="gift logo">
+                        <h3>Pack as a gift</h3>
+                     </label>
+                     <label class="checkbox-body">
+                        <input class="gift-checkbox" type="checkbox" name="languages" value="HTML">
+                        <img src="../../assets/icons/map_post-office.png" alt="gift logo">
+                        <h3>Add postcard</h3>
+                     </label>
+                     <label class="checkbox-body">
+                        <input class="gift-checkbox" type="checkbox" name="languages" value="HTML">
+                        <img src="../../assets/icons/nimbus_discount-circle.png" alt="gift logo">
+                        <h3>Provide 2% discount to the next time</h3>
+                     </label>
+                     <label class="checkbox-body">
+                        <input class="gift-checkbox" type="checkbox" name="languages" value="HTML">
+                        <img src="../../assets/icons/fa-solid_pen-alt.png" alt="gift logo">
+                        <h3>Branded pen or pencil</h3>
+                     </label>
+                  </div>
+                  <div class="payment">
                      <div class="input-title">
-                        <h3>Choose 2 gifts:</h3>
+                        <h3>Choose the payment</h3>
                      </div>
-                     <div class="gift-block">
-                        <label class="checkbox-body">
-                           <input class="gift-checkbox" type="checkbox" name="languages" value="HTML">
-                           <img src="../../assets/icons/fontisto_shopping-package.png" alt="gift logo">
-                           <h3>Pack as a gift</h3>
+                     <div class="payment-body">
+                        <label class="payment-item-body">
+                           <p><input checked class="payment-item" type="radio" name="payment method"
+                                 value="yes"><span>Card</span> </p>
                         </label>
-                        <label class="checkbox-body">
-                           <input class="gift-checkbox" type="checkbox" name="languages" value="HTML">
-                           <img src="../../assets/icons/map_post-office.png" alt="gift logo">
-                           <h3>Add postcard</h3>
-                        </label>
-                        <label class="checkbox-body">
-                           <input class="gift-checkbox" type="checkbox" name="languages" value="HTML">
-                           <img src="../../assets/icons/nimbus_discount-circle.png" alt="gift logo">
-                           <h3>Provide 2% discount to the next time</h3>
-                        </label>
-                        <label class="checkbox-body">
-                           <input class="gift-checkbox" type="checkbox" name="languages" value="HTML">
-                           <img src="../../assets/icons/fa-solid_pen-alt.png" alt="gift logo">
-                           <h3>Branded pen or pencil</h3>
+                        <label class="payment-item-body">
+                           <p><input class="payment-item" type="radio" name="payment method" value="yes">
+                              <span>Cash</span>
+                           </p>
                         </label>
                      </div>
-                     <div class="payment">
-                        <div class="input-title">
-                           <h3>Choose the payment</h3>
-                        </div>
-                        <div class="payment-body">
-                           <label class="payment-item-body">
-                              <p><input checked class="payment-item" type="radio" name="payment method"
-                                    value="yes"><span>Card</span> </p>
-                           </label>
-                           <label class="payment-item-body">
-                              <p><input class="payment-item" type="radio" name="payment method" value="yes">
-                                 <span>Cash</span>
-                              </p>
-                           </label>
-                        </div>
-                     </div>
-
-                     <button class="complete-button" type="submit">Complete</button>
-                  </form>
-
+                  </div>
+                  <button class="complete-button" type="submit">Complete</button>
                </div>
-            </div>
+
+            </form>
          </div>
       </div>
    </div>
 
+   <script src="./script.js"></script>
 </body>
 
 </html>

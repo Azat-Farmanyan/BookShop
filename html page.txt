@@ -50,3 +50,51 @@ _______________
       </div>
    </div>
 _______________
+
+
+
+Book section
+_______________
+   
+   <section class="book-section" id="book-section">
+      <div class="content">
+         <div class="book-section-body">
+            <div class="book-catalog">
+               <h2 class="title2">Book Catalog</h2>
+               <div class="cards" id="products-container">
+               </div>
+            </div>
+
+            <div class="order-books">               
+               <h2 class="title2">Order Books</h2>
+
+               <div class="order-books-body">
+                  <div class="order-cards">
+                  </div>
+                  <div class="order-buttons">
+
+                     <div data-cart-empty class="empty-bag">
+                        <p class="total-title">Cart is empty</p>
+                     </div>
+
+                     <div class="line-under-total"></div>
+
+                     <div class="total-block">
+                        <p class="total-title">Total: </p>
+                        <p class="total">0</p>
+                     </div>
+
+                     <div class="order-button">
+                        <a href="https://azat-farmanyan.github.io/BookShop/pages/order_form/">
+                           <button class="order">Confirm order</button>
+                        </a>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </section> 
+_______________
