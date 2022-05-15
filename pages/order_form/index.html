@@ -98,11 +98,11 @@
                </div>
 
                <div class="right-side">
-                  <div class="input-title">
-                     <h3>Choose 2 gifts:</h3>
-                  </div>
-                  <div class="gift-block">
-                     <form action="#">
+                  <form action="#">
+                     <div class="input-title">
+                        <h3>Choose 2 gifts:</h3>
+                     </div>
+                     <div class="gift-block">
                         <label class="checkbox-body">
                            <input class="gift-checkbox" type="checkbox" name="languages" value="HTML">
                            <img src="../../assets/icons/fontisto_shopping-package.png" alt="gift logo">
@@ -123,8 +123,26 @@
                            <img src="../../assets/icons/fa-solid_pen-alt.png" alt="gift logo">
                            <h3>Branded pen or pencil</h3>
                         </label>
-                     </form>
-                  </div>
+                     </div>
+                     <div class="payment">
+                        <div class="input-title">
+                           <h3>Choose the payment</h3>
+                        </div>
+                        <div class="payment-body">
+                           <label class="payment-item-body">
+                              <p><input checked class="payment-item" type="radio" name="payment method"
+                                    value="yes"><span>Card</span> </p>
+                           </label>
+                           <label class="payment-item-body">
+                              <p><input class="payment-item" type="radio" name="payment method" value="yes">
+                                 <span>Cash</span>
+                              </p>
+                           </label>
+                        </div>
+                     </div>
+
+                     <button type="submit">Complete</button>
+                  </form>
 
                </div>
             </div>
