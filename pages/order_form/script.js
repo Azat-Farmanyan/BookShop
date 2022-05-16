@@ -6,6 +6,7 @@ window.addEventListener('click', event => {
       const personInfo = {
          name: orderForm.querySelector('#input-name').value,
          surname: orderForm.querySelector('#input-surname').value,
+         deliveryDate: orderForm.querySelector('#delivery-date-input').value,
          street: orderForm.querySelector('#input-street').value,
          houseNumber: orderForm.querySelector('#input-house-number').value,
          flatNumber: orderForm.querySelector('#input-flat-number').value,
@@ -19,8 +20,8 @@ window.addEventListener('click', event => {
                <h3 class="modal-title">The order created</h3>
                <p class="order-description">
                The delivery address is
-                ${elem.street}
-                house ${elem.houseNumber} 
+                ${elem.street},
+                house ${elem.houseNumber},
                 flat ${elem.houseNumber}. 
                 Customer ${elem.name} ${elem.surname}.
                </p>
@@ -41,6 +42,14 @@ window.addEventListener('click', event => {
             }
          })
       }
+      else {
+         for (let personInputs in personInfo) {
+            if (personInfo[personInputs] === '') {
+               const errorInputName = orderForm.getAttribute(personInputs, '')
+               console.log(errorInputName);
+            }
+         }
 
+      }
    }
 });

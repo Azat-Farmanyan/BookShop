@@ -526,6 +526,16 @@ input[type="checkbox"]:checked + label::after {
   box-shadow: 0px 4px 4px rgba(9, 129, 230, 0.25);
   color: #FFFFFF;
 }
+
+.error-border{
+  border: 1px solid #E60909;
+}
+.cursor-not-allowed{
+  cursor: not-allowed;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
 /*-------End of Modal for order form -------------*/
 
 /*-------End of right side-------------*/
