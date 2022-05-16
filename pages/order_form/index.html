@@ -67,42 +67,51 @@
                      <div class="input-title">
                         <h3>Name</h3>
                      </div>
-                     <input placeholder="Enter your name" name="name" id="input-name" class="input" type="text"
-                        required>
+                     <input placeholder="Enter your name" name="name" id="input-name" class="input" type="text" required
+                        oninvalid="this.setCustomValidity('Enter Your Name Here!')"
+                        oninput="this.setCustomValidity('')">
                   </div>
                   <div class="surname">
                      <div class="input-title">
                         <h3>Surname</h3>
                      </div>
                      <input placeholder="Enter your surname" id="input-surname" name="surname" class="input" type="text"
-                        required>
+                        required oninvalid="this.setCustomValidity('Enter Your Surname Here!')"
+                        oninput="this.setCustomValidity('')">
                   </div>
                   <div class="delivery-date">
                      <div class="input-title">
                         <h3>Delivery date</h3>
                      </div>
-                     <input id="delivery-date-input" class="input" type="date" required>
+                     <input id="delivery-date-input" class="input" type="date" required
+                        oninvalid="this.setCustomValidity('Select a Delivery Date!')"
+                        oninput="this.setCustomValidity('')">
                   </div>
                   <div class="street">
                      <div class="input-title">
                         <h3>Street</h3>
                      </div>
                      <input placeholder="Enter your street" id="input-street" name="street" class="input" type="text"
-                        required>
+                        required oninvalid="this.setCustomValidity('Enter Your Street Here!')"
+                        oninput="this.setCustomValidity('')">
                   </div>
                   <div class="house-number">
                      <div class="input-title">
                         <h3>House number</h3>
                      </div>
                      <input placeholder="Enter house number" id="input-house-number" name="house-number" class="input"
-                        type="number" required>
+                        type="number" required required
+                        oninvalid="this.setCustomValidity('Enter Your House Number Here!')"
+                        oninput="this.setCustomValidity('')">
                   </div>
                   <div class="flat-number">
                      <div class="input-title">
                         <h3>Flat number</h3>
                      </div>
                      <input placeholder="Enter flat number" id="input-flat-number" name="flat-number"
-                        class="input input-flat-number" type="number" required>
+                        class="input input-flat-number" type="number" required
+                        oninvalid="this.setCustomValidity('Enter Your Flat Number Here!')"
+                        oninput="this.setCustomValidity('')">
                   </div>
                </div>
                <div class="right-side">
@@ -147,7 +156,7 @@
                         </label>
                      </div>
                   </div>
-                  <button complete class="complete-button" type="reset">Complete</button>
+                  <button complete class="complete-button" type="submit">Complete</button>
                </div>
             </form>
          </div>

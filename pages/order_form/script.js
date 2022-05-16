@@ -2,6 +2,7 @@ const CompleteButton = document.querySelector('.complete-button');
 
 window.addEventListener('click', event => {
    if (event.target.hasAttribute('complete')) {
+
       const orderForm = event.target.closest('.order-form-block')
       const personInfo = {
          name: orderForm.querySelector('#input-name').value,
@@ -30,7 +31,6 @@ window.addEventListener('click', event => {
       </div>`
          document.body.insertAdjacentHTML('beforeend', htmlElement)
       }
-
       if (Object.values(personInfo).every(el => el != '')) {
          renderModal(personInfo)
          window.addEventListener('click', closeEvent => {
@@ -42,14 +42,6 @@ window.addEventListener('click', event => {
             }
          })
       }
-      else {
-         for (let personInputs in personInfo) {
-            if (personInfo[personInputs] === '') {
-               const errorInputName = orderForm.getAttribute(personInputs, '')
-               console.log(errorInputName);
-            }
-         }
 
-      }
    }
 });
