@@ -647,7 +647,6 @@ transform-origin: bottom left;
 
 /*-------Modal Window-------------*/
 .modal-block{
-
   position: fixed;
   width: 100vw;
   height: 100vh;

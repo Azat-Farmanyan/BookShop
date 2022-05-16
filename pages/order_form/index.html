@@ -46,6 +46,15 @@
          </div>
       </div>
    </header>
+
+   <!-- <div class="modal-block">
+      <div class="modal-block-body">
+         <img class="checked-icon" src="../../assets/icons/checked.png" alt="complete-icon">
+         <h3 class="modal-title">The order created</h3>
+         <p class="order-description">The delivery address is Amazing street house 3 flat 10. Customer John Gald.</p>
+         <button close-modal class="modal-block-close-button" type="submit">Close</button>
+      </div>
+   </div> -->
    <div class="main-page">
       <div class="content">
          <div class="order-form">
@@ -61,44 +70,42 @@
                      <input placeholder="Enter your name" name="name" id="input-name" class="input" type="text"
                         required>
                   </div>
-
                   <div class="surname">
                      <div class="input-title">
                         <h3>Surname</h3>
                      </div>
-                     <input placeholder="Enter your surname" id="input-surname" name="surname" class="input"
-                        type="text">
+                     <input placeholder="Enter your surname" id="input-surname" name="surname" class="input" type="text"
+                        required>
                   </div>
-
                   <div class="delivery-date">
                      <div class="input-title">
                         <h3>Delivery date</h3>
                      </div>
-                     <input placeholder="Enter your surname" class="input delivery-input" type="date">
+                     <input placeholder="Enter your surname" id="delivery-date-input" class="input" type="date"
+                        required>
                   </div>
-
                   <div class="street">
                      <div class="input-title">
                         <h3>Street</h3>
                      </div>
-                     <input placeholder="Enter your street" name="street" class="input" type="text">
+                     <input placeholder="Enter your street" id="input-street" name="street" class="input" type="text"
+                        required>
                   </div>
-
                   <div class="house-number">
                      <div class="input-title">
                         <h3>House number</h3>
                      </div>
-                     <input placeholder="Enter house number" name="house-number" class="input" type="number">
+                     <input placeholder="Enter house number" id="input-house-number" name="house-number" class="input"
+                        type="number" required>
                   </div>
-
                   <div class="flat-number">
                      <div class="input-title">
                         <h3>Flat number</h3>
                      </div>
-                     <input placeholder="Enter flat number" name="flat-number" class="input" type="text">
+                     <input placeholder="Enter flat number" id="input-flat-number" name="flat-number"
+                        class="input input-flat-number" type="text" required>
                   </div>
                </div>
-
                <div class="right-side">
                   <div class="input-title">
                      <h3>Choose 2 gifts:</h3>
@@ -141,9 +148,8 @@
                         </label>
                      </div>
                   </div>
-                  <button class="complete-button" type="submit">Complete</button>
+                  <button complete class="complete-button" type="button">Complete</button>
                </div>
-
             </form>
          </div>
       </div>
