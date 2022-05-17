@@ -67,8 +67,9 @@
                      <div class="input-title">
                         <h3>Name</h3>
                      </div>
+
                      <input placeholder="Enter your name" name="name" id="input-name" class="input" type="text" required
-                        oninvalid="this.setCustomValidity('Enter Your Name Here!')"
+                        minlength="4" oninvalid="this.setCustomValidity('Enter Your Name Here!')"
                         oninput="this.setCustomValidity('')">
                   </div>
                   <div class="surname">
@@ -76,7 +77,7 @@
                         <h3>Surname</h3>
                      </div>
                      <input placeholder="Enter your surname" id="input-surname" name="surname" class="input" type="text"
-                        required oninvalid="this.setCustomValidity('Enter Your Surname Here!')"
+                        required minlength="4" oninvalid="this.setCustomValidity('Enter Your Surname Here!')"
                         oninput="this.setCustomValidity('')">
                   </div>
                   <div class="delivery-date">

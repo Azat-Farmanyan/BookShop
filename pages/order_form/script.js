@@ -41,3 +41,15 @@ document.getElementById("form").addEventListener("submit", (e) => {
       });
    }
 });
+
+
+input.onblur = function () {
+   if (!this.value.includes('@')) { // не email
+      // показать ошибку
+      this.classList.add("error");
+      // ...и вернуть фокус обратно
+      input.focus();
+   } else {
+      this.classList.remove("error");
+   }
+};
