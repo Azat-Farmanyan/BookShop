@@ -285,55 +285,61 @@ transform-origin: bottom left;
   padding: 15px 50px 35px;
 
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
 }
-
-.input-title h3{
+.input-control{
+  display: flex;
+  flex-direction: column;
+}
+.input-control label,
+.input-title{
   font-family: 'Roboto Slab';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-
   color: #0981E6;
-
-  display: block;
-  margin-left: 16px;
-  margin-bottom: 5px;
-  margin-top: 10px;
+  margin: 0 0 5px 15px;
 }
-.input{
-  padding: 11px 15px;
+
+
+.input-control input{
+  min-width: 350px;
 
   background: #FFFFFF;
   border: 1px solid rgba(9, 129, 230, 0.2);
   border-radius: 10px;
-
-  height: 44px;
-  min-width: 350px;
 
   font-family: 'Arial';
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
   line-height: 20px;
-
   color: #0981E6;
+  padding: 10px 15px;
+}
+input::placeholder{
+  color: #0981E666
+}
+/*-------Error styles -------------*/
+.input-control input:focus {
+  outline: 0;
+}
+.input-control.success input{
+  border-color: #0fba0069;
+}
+.input-control.error input{
+  border-color: #e609098f;
+}
+.input-control .error {
+  color: #E60909;
+  font-size: 13px;
+  height: 13px;
+  margin: 3px 0 0px 16px;
+}
+/*-------End OF Error styles -------------*/
 
-  transition: all 0.5s ease;
-}
-.delivery-input{
-  min-width: 100px;
-}
-.input:focus{
-  background: #FFFFFF;
-  box-shadow: inset 3px 3px 3px rgba(9, 129, 230, 0.25);
-  border-radius: 10px;
-  border: 1px solid #0981E6;
-}
-.input::placeholder{
-  color: rgba(9, 129, 230, 0.4);
-}
+
 /*-------right side-------------*/
 
 .right-side{
@@ -352,7 +358,7 @@ transform-origin: bottom left;
   display: flex;
   align-items: center;
   min-width: 177px;
-  min-height: 57px;
+  min-height: 68px;
 
   background: #FFFFFF;
   border: 1px solid rgba(9, 129, 230, 0.2);
@@ -391,6 +397,10 @@ input[type="checkbox"]:checked + label::after {
   border: 1px solid #0981E6;
 }
 /*-------Payment radio checkbox -------------*/
+.payment-title{
+  margin-top: 10px;
+
+}
 .payment-body {
   display: flex;
 }
@@ -440,7 +450,7 @@ input[type="checkbox"]:checked + label::after {
 
   width: 100%;
   padding: 12px;
-  margin-top: 42px;
+  margin-top: 20px;
   transition: all 0.5s ease;
 }
 .complete-button:hover{
@@ -526,20 +536,7 @@ input[type="checkbox"]:checked + label::after {
   box-shadow: 0px 4px 4px rgba(9, 129, 230, 0.25);
   color: #FFFFFF;
 }
-/*-------Error styles -------------*/
 
-input:invalid {
-  border: 1px solid #E60909;
-}
-
-.invalid { border: 1px solid #E60909; }
-
-  #error { color: red }
-
-  .error {
-    background: red;
-  }
-/*-------End OF Error styles -------------*/
 
 .cursor-not-allowed{
   cursor: not-allowed;

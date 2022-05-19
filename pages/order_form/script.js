@@ -1,15 +1,164 @@
+const form = document.getElementById('form')
+const name = document.getElementById('name')
+const surname = document.getElementById('surname')
+const deliveryDate = document.getElementById('delivery-date')
+const street = document.getElementById('street')
+const houseNumber = document.getElementById('house-number')
+const flatNumber = document.getElementById('flat-number')
+
+
+form.addEventListener('submit', e => {
+   e.preventDefault()
+
+   validateInputs()
+})
+
+function setError(element, message) {
+   const inputControl = element.parentElement
+   const errorDisplay = inputControl.querySelector('.error')
+
+   errorDisplay.innerText = message
+   inputControl.classList.add('error')
+   errorDisplay.style.marginBottom = '10px'
+
+   inputControl.classList.remove('success')
+}
+
+function setSuccess(element) {
+   const inputControl = element.parentElement
+   const errorDisplay = inputControl.querySelector('.error')
+
+   errorDisplay.innerText = ''
+   inputControl.classList.add('success')
+   errorDisplay.style.marginBottom = '0px'
+
+   inputControl.classList.remove('error')
+}
+
+function validateInputs() {
+   const nameValue = name.value.trim()
+   const surnameValue = surname.value.trim()
+   const deliveryDateValue = deliveryDate.value.trim()
+   const streetValue = street.value.trim()
+   const houseNumberValue = houseNumber.value.trim()
+   const flatNumberValue = flatNumber.value.trim()
+
+
+   // Name Validation 
+   if (nameValue === '') {
+      setError(name, 'Name is required')
+   }
+   else if (nameValue.length < 4) {
+      setError(name, 'Length is less than 4 symbols')
+   }
+   else if (!nameValue.toLowerCase().split('').every(el => {
+      return el.charCodeAt() > 96 & el.charCodeAt() < 123
+   })) {
+      setError(name, 'Enter only alphabetic value')
+   }
+   else {
+      setSuccess(name)
+   }
+
+   // Surname Validation 
+   if (surnameValue === '') {
+      setError(surname, 'Surname is required')
+   }
+   else if (surnameValue.length < 5) {
+      setError(surname, 'Length is less than 5 symbols')
+   }
+   else if (!surnameValue.toLowerCase().split('').every(el => {
+      return el.charCodeAt() > 96 & el.charCodeAt() < 123
+   })) {
+      setError(surname, 'Enter only alphabetic value')
+   }
+   else {
+      setSuccess(surname)
+   }
+
+
+   // Delivery Date Validation 
+   // Not finished
+   if (deliveryDateValue === '') {
+      setError(deliveryDate, 'Delivery date is required')
+   }
+   else {
+      setSuccess(deliveryDate)
+   }
+
+   // Street Validation 
+   if (streetValue === '') {
+      setError(street, 'Street is required')
+   }
+   else if (streetValue.length < 5) {
+      setError(street, 'Length is less than 5 symbols')
+   }
+   else {
+      setSuccess(street)
+   }
+
+   // House number Validation 
+   if (houseNumberValue === '') {
+      setError(houseNumber, 'House number is required')
+   }
+   else if (+houseNumberValue < 0) {
+      setError(houseNumber, 'Enter only positive numbers')
+   }
+   else {
+      setSuccess(houseNumber)
+   }
+
+
+   // Flat number Validation 
+   if (flatNumberValue === '') {
+      setError(flatNumber, 'Flat number is required')
+   }
+   else if (flatNumberValue.startsWith('-')) {
+      setError(flatNumber, 'Enter only positive numbers')
+   }
+   else if (!isNumber(flatNumberValue)) {
+      setError(flatNumber, 'Enter only numbers (the dash symbol is allowed)')
+   }
+   else if (flatNumberValue.endsWith('-')) {
+      setError(flatNumber, 'Number cannot end with a dash')
+   }
+   else {
+      setSuccess(flatNumber)
+   }
+   function isNumber(a) {
+      const result = a.split('')
+         .map(char => char.charCodeAt())
+         .every((charCode) => {
+            return charCode > 47 & charCode < 58 || charCode === 45
+         })
+      return result
+   }
+}
+
+
+
+
+
+
 const CompleteButton = document.querySelector(".complete-button");
 document.getElementById("form").addEventListener("submit", (e) => {
+
+
    e.preventDefault();
+
    const orderForm = e.target;
    const personInfo = {
-      name: orderForm.querySelector("#input-name").value,
-      surname: orderForm.querySelector("#input-surname").value,
-      deliveryDate: orderForm.querySelector("#delivery-date-input").value,
-      street: orderForm.querySelector("#input-street").value,
-      houseNumber: orderForm.querySelector("#input-house-number").value,
-      flatNumber: orderForm.querySelector("#input-flat-number").value
+      name: firstCharToUppercase(orderForm.querySelector("#name").value),
+      surname: firstCharToUppercase(orderForm.querySelector("#surname").value),
+      deliveryDate: orderForm.querySelector("#delivery-date").value,
+      street: orderForm.querySelector("#street").value,
+      houseNumber: orderForm.querySelector("#house-number").value,
+      flatNumber: orderForm.querySelector("#flat-number").value
    };
+
+   function firstCharToUppercase(str) {
+      return str[0].toUpperCase() + str.slice(1)
+   }
 
    function renderModal(elem) {
       const htmlElement = `
@@ -21,7 +170,7 @@ document.getElementById("form").addEventListener("submit", (e) => {
             The delivery address is
              ${elem.street},
              house ${elem.houseNumber},
-             flat ${elem.houseNumber}. 
+             flat ${elem.flatNumber}.
              Customer ${elem.name} ${elem.surname}.
             </p>
             <button close-modal class="modal-block-close-button" type="button">Close</button>
@@ -29,7 +178,9 @@ document.getElementById("form").addEventListener("submit", (e) => {
    </div>`;
       document.body.insertAdjacentHTML("beforeend", htmlElement);
    }
-   if (Object.values(personInfo).every((el) => el != "")) {
+
+   const succesArray = form.querySelectorAll('.success')
+   if (succesArray.length === 6) {
       renderModal(personInfo);
       window.addEventListener("click", (closeEvent) => {
          if (closeEvent.target.hasAttribute("close-modal")) {
@@ -41,15 +192,3 @@ document.getElementById("form").addEventListener("submit", (e) => {
       });
    }
 });
-
-
-input.onblur = function () {
-   if (!this.value.includes('@')) { // не email
-      // показать ошибку
-      this.classList.add("error");
-      // ...и вернуть фокус обратно
-      input.focus();
-   } else {
-      this.classList.remove("error");
-   }
-};

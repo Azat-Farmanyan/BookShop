@@ -60,61 +60,41 @@
          <div class="order-form">
             <h2 class="order-form-title">Order form</h2>
             <form id="form" class="order-form-block">
-
                <div class="left-side">
 
-                  <div name class="name">
-                     <div class="input-title">
-                        <h3>Name</h3>
-                     </div>
-
-                     <input placeholder="Enter your name" name="name" id="input-name" class="input" type="text" required
-                        minlength="4" oninvalid="this.setCustomValidity('Enter Your Name Here!')"
-                        oninput="this.setCustomValidity('')">
+                  <div class="input-control">
+                     <label for="name">Name</label>
+                     <input placeholder="Enter your name" id='name' name='name' type='text'>
+                     <div class="error"></div>
                   </div>
-                  <div class="surname">
-                     <div class="input-title">
-                        <h3>Surname</h3>
-                     </div>
-                     <input placeholder="Enter your surname" id="input-surname" name="surname" class="input" type="text"
-                        required minlength="4" oninvalid="this.setCustomValidity('Enter Your Surname Here!')"
-                        oninput="this.setCustomValidity('')">
+                  <div class="input-control">
+                     <label for="surname">Surname</label>
+                     <input placeholder="Enter your surname" id='surname' name='name' type='text'>
+                     <div class="error"></div>
                   </div>
-                  <div class="delivery-date">
-                     <div class="input-title">
-                        <h3>Delivery date</h3>
-                     </div>
-                     <input id="delivery-date-input" class="input" type="date" required
-                        oninvalid="this.setCustomValidity('Select a Delivery Date!')"
-                        oninput="this.setCustomValidity('')">
+                  <div class="input-control">
+                     <label for="delivery-date">Delivery date</label>
+                     <input id='delivery-date' name='date' type='date'>
+                     <div class="error"></div>
                   </div>
-                  <div class="street">
-                     <div class="input-title">
-                        <h3>Street</h3>
-                     </div>
-                     <input placeholder="Enter your street" id="input-street" name="street" class="input" type="text"
-                        required oninvalid="this.setCustomValidity('Enter Your Street Here!')"
-                        oninput="this.setCustomValidity('')">
+                  <div class="input-control">
+                     <label for="street">Street</label>
+                     <input placeholder="Enter street" id='street' name='street' type='text'>
+                     <div class="error"></div>
                   </div>
-                  <div class="house-number">
-                     <div class="input-title">
-                        <h3>House number</h3>
-                     </div>
-                     <input placeholder="Enter house number" id="input-house-number" name="house-number" class="input"
-                        type="number" required required
-                        oninvalid="this.setCustomValidity('Enter Your House Number Here!')"
-                        oninput="this.setCustomValidity('')">
+                  <div class="input-control">
+                     <label for="house-number">House number</label>
+                     <input placeholder="Enter house number" id='house-number' name='house-number' type='number'>
+                     <div class="error"></div>
                   </div>
-                  <div class="flat-number">
-                     <div class="input-title">
-                        <h3>Flat number</h3>
-                     </div>
-                     <input placeholder="Enter flat number" id="input-flat-number" name="flat-number"
-                        class="input input-flat-number" type="number" required
-                        oninvalid="this.setCustomValidity('Enter Your Flat Number Here!')"
-                        oninput="this.setCustomValidity('')">
+                  <div class="input-control">
+                     <label for="flat-number">Flat number</label>
+                     <input placeholder="Enter flat number" id='flat-number' name='flat-number' type='text'>
+                     <div class="error"></div>
                   </div>
                </div>
+
+
                <div class="right-side">
                   <div class="input-title">
                      <h3>Choose 2 gifts:</h3>
@@ -142,7 +122,7 @@
                      </label>
                   </div>
                   <div class="payment">
-                     <div class="input-title">
+                     <div class="input-title payment-title">
                         <h3>Choose the payment</h3>
                      </div>
                      <div class="payment-body">
