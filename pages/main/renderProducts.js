@@ -25,7 +25,7 @@ function renderProducts(productsArray) {
                            </h4>
                            <div class="price">
                               <p class="item-price-title">Price:</p>
-                              <p class="item-price">${item.price}</p>
+                              <p class="item-price">${item.price} $</p>
                            </div>
                            <div class="counter-block">
                               <div class="counter-minus" data-action="minus">-</div>

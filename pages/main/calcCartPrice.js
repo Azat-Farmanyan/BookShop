@@ -17,5 +17,5 @@ function calcCartPrice() {
    })
 
    shoppingCard.innerText = summaryAmountOfOrderBooks.reduce((sum, el) => sum += +el, 0)
-   totalPriceEl.innerText = totalPrice
+   totalPriceEl.innerText = `${totalPrice} $`
 }
