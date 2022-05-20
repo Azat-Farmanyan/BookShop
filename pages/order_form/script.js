@@ -78,9 +78,22 @@ function validateInputs() {
 
 
    // Delivery Date Validation 
-   // Not finished
+   const deliveyDayFromOrder = deliveryDateValue.split('-')
+   const today = new Date()
+   const delivetDateMIlliseconds = new Date()
+   delivetDateMIlliseconds.setFullYear(+deliveyDayFromOrder[0])
+   delivetDateMIlliseconds.setMonth(+deliveyDayFromOrder[1] - 1)
+   delivetDateMIlliseconds.setDate(+deliveyDayFromOrder[2])
+   function checkDeliveyDate(delDate) {
+      if (delDate.getTime() - today.getTime() < 86400) {
+         return true
+      } return false
+   }
    if (deliveryDateValue === '') {
       setError(deliveryDate, 'Delivery date is required')
+   }
+   else if (checkDeliveyDate(delivetDateMIlliseconds)) {
+      setError(deliveryDate, 'Delivery date must be not earlier than tommorow')
    }
    else {
       setSuccess(deliveryDate)
@@ -107,7 +120,6 @@ function validateInputs() {
    else {
       setSuccess(houseNumber)
    }
-
 
    // Flat number Validation 
    if (flatNumberValue === '') {
@@ -157,7 +169,8 @@ document.getElementById("form").addEventListener("submit", (e) => {
    };
 
    function firstCharToUppercase(str) {
-      return str[0].toUpperCase() + str.slice(1)
+      if (str != '')
+         return str[0].toUpperCase() + str.slice(1)
    }
 
    function renderModal(elem) {

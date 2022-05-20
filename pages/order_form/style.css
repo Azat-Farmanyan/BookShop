@@ -318,8 +318,16 @@ transform-origin: bottom left;
   color: #0981E6;
   padding: 10px 15px;
 }
+input{
+  transition: all 0.5s ease;
+}
 input::placeholder{
   color: #0981E666
+}
+input:focus{
+  background: #FFFFFF;
+  border: 1px solid rgba(9, 129, 230, 0.66);
+  box-shadow: inset 2px 2px 5px rgba(9, 129, 230, 0.31);
 }
 /*-------Error styles -------------*/
 .input-control input:focus {
