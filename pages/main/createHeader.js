@@ -56,7 +56,7 @@ const giftCards = document.createElement('li')
 giftCards.className = ('active-hover-animation nav-item')
 const giftCardsLink = document.createElement('a')
 giftCardsLink.href = 'https://azat-farmanyan.github.io/BookShop/pages/order_form/'
-giftCardsLink.innerText = 'Orders'
+giftCardsLink.innerText = 'Order Form'
 giftCards.append(giftCardsLink)
 navItems.append(giftCards)
 
@@ -64,8 +64,8 @@ navItems.append(giftCards)
 const about = document.createElement('li')
 about.className = ('active-hover-animation nav-item')
 const aboutLink = document.createElement('a')
-aboutLink.href = ''
-aboutLink.innerText = 'About'
+aboutLink.href = '#footer'
+aboutLink.innerText = 'About us'
 about.append(aboutLink)
 navItems.append(about)
 
@@ -73,7 +73,7 @@ navItems.append(about)
 const contact = document.createElement('li')
 contact.className = ('active-hover-animation nav-item')
 const contactLink = document.createElement('a')
-contactLink.href = ''
+contactLink.href = '#footer'
 contactLink.innerText = 'Contact'
 contact.append(contactLink)
 navItems.append(contact)
@@ -101,7 +101,7 @@ navItems.append(register)
 const bookingCart = document.createElement('li')
 bookingCart.className = ('nav-item booking-cart')
 const bookingCartLink = document.createElement('a')
-bookingCartLink.href = ''
+bookingCartLink.href = 'https://azat-farmanyan.github.io/BookShop/pages/order_form/'
 const bookingCartImg = document.createElement('img')
 bookingCartImg.src = '../../assets/icons/shopping-cart.png'
 bookingCartImg.alt = 'booking cart logo'

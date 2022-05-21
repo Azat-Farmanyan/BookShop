@@ -557,3 +557,87 @@ input[type="checkbox"]:checked + label::after {
 /*-------End of right side-------------*/
 
 /*-------End of Order form-------------*/
+
+
+/*-------Footer-------------*/
+.footer-body{
+  display: flex;
+  flex-direction:  column;
+
+  background: linear-gradient(268.27deg, rgba(9, 129, 230, 0.21) -36.17%, rgba(9, 129, 230, 0.01) 120.2%);
+}
+.footer-nav{
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 0;
+}
+.footer-nav-item{
+  min-width: 360px;
+  align-items: center;
+  text-align: center;
+  margin: 0 30px;
+}
+.footer-nav-title{
+  width: 360px;
+  min-height: 29spx;
+  background: #0981E6;
+  border-radius: 5px;
+
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  color: #FFFFFF;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+}
+.footer-nav-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-nav-list a{
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+
+  color: #0981E6;
+  max-width: 280px;
+  margin-bottom: 10px;
+}
+.footer-rsschool-logo img{
+  max-width: 110px;
+}
+.footer-floor{
+  background: #0981E6;
+  padding: 12px 0;
+}
+.footer-floor-body{
+  display: flex;
+  max-width: 586px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.footer-bookshop-logo img{
+  width: 97px;
+}
+.all-rights{
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+
+  color: #FFFFFF;
+}
+.footer-rsschool-logo img{
+  max-width: 110px;
+}
+/*-------End of Footer-------------*/
