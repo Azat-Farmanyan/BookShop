@@ -137,6 +137,8 @@ h6 {
 }
 body{
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background: url(../../assets/images/books-background-icons.png) repeat;
+
   /* font-family: 'Roboto Slab', serif; */
 }
 /*-------Header-------------*/
