@@ -44,22 +44,27 @@ function renderProducts(productsArray) {
    });
 }
 function renderModal(elem) {
-   const htmlElement = `<div class="modal-block">
-   <div class="modal-body">
-      <h5 class="item-author order-item-author">${elem.author}</h5>
+   const htmlElement = `
+   <div class="modal-block">
+      <div class="modal-body">
+         <div class="show-more-img-block">
+            <img src="${elem.imageLink}" alt="">
+         </div>
+         <div class="show-more-text-box">
+            <h5 class="item-author order-item-author">${elem.author}</h5>
 
-      <div class="modal-title">
-        ${elem.title}
+            <div class="modal-title">
+              ${elem.title}
+            </div>
+            <div class="modal-text">
+               ${elem.description}
+            </div>
+            <button closeModal class="close-modal" id="close-modal">
+               <p closeModal>Close</p>
+            </button>
+         </div>
       </div>
-      <div class="modal-text">
-        ${elem.description}
-      </div>
-      <button closeModal class="close-modal" id="close-modal">
-         <p closeModal>Close</p>
-      </button>
-   </div>
-   
-</div>`
+   </div>`
    document.body.insertAdjacentHTML('beforeend', htmlElement)
 }
 window.addEventListener('click', function (event) {
