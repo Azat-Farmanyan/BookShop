@@ -278,6 +278,7 @@ transform-origin: bottom left;
 .order-form-block{
   background: rgba(241, 247, 255, 0.5);
   border: 1px solid rgba(9, 129, 230, 0.15);
+  backdrop-filter: blur(1px);
   border-radius: 10px;
 
   max-width: 800px;
@@ -567,6 +568,7 @@ input[type="checkbox"]:checked + label::after {
   flex-direction:  column;
 
   background: linear-gradient(268.27deg, rgba(9, 129, 230, 0.21) -36.17%, rgba(9, 129, 230, 0.01) 120.2%);
+  backdrop-filter: blur(2px);
 }
 .footer-nav{
   display: flex;

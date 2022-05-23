@@ -52,7 +52,7 @@ function validateInputs() {
       setError(name, 'Length is less than 4 symbols')
    }
    else if (!nameValue.toLowerCase().split('').every(el => {
-      return el.charCodeAt() > 96 & el.charCodeAt() < 123
+      return el.charCodeAt() > 96 & el.charCodeAt() < 123 || el.charCodeAt() === 32
    })) {
       setError(name, 'Enter only alphabetic value')
    }
@@ -68,7 +68,7 @@ function validateInputs() {
       setError(surname, 'Length is less than 5 symbols')
    }
    else if (!surnameValue.toLowerCase().split('').every(el => {
-      return el.charCodeAt() > 96 & el.charCodeAt() < 123
+      return el.charCodeAt() > 96 & el.charCodeAt() < 123 || el.charCodeAt() === 32
    })) {
       setError(surname, 'Enter only alphabetic value')
    }
