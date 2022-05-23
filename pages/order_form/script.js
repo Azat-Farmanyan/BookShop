@@ -176,18 +176,20 @@ document.getElementById("form").addEventListener("submit", (e) => {
    function renderModal(elem) {
       const htmlElement = `
       <div class="modal-block">
-         <div class="modal-block-body">
-            <img class="checked-icon" src="../../assets/icons/checked.png" alt="complete-icon">
-            <h3 class="modal-title">The order created</h3>
-            <p class="order-description">
+      <div class="modal-block-body">
+         <img class="checked-icon" src="../../assets/icons/checked.png" alt="complete-icon">
+         <h3 class="modal-title">The order created</h3>
+         <p class="order-description">
             The delivery address is
-             ${elem.street},
-             house ${elem.houseNumber},
-             flat ${elem.flatNumber}.
-             Customer ${elem.name} ${elem.surname}.
-            </p>
-            <button close-modal class="modal-block-close-button" type="button">Close</button>
-         </div>
+            ${elem.street},
+            house ${elem.houseNumber},
+            flat ${elem.flatNumber}.
+            Customer ${elem.name} ${elem.surname}.
+         </p>
+         <a class="back-to-main" href="https://azat-farmanyan.github.io/BookShop/pages/main/">
+            <button close-modal class="modal-block-close-button" type="button">Back to main</button>
+         </a>
+      </div>
    </div>`;
       document.body.insertAdjacentHTML("beforeend", htmlElement);
    }

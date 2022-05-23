@@ -478,6 +478,7 @@ input[type="checkbox"]:checked + label::after {
   position: fixed;
   width: 100vw;
   height: 100vh;
+  z-index: 100;
   background-color: rgba(0, 0, 0, 0.5);
   top: 0;
   bottom: 0;
@@ -523,6 +524,9 @@ input[type="checkbox"]:checked + label::after {
 
   margin-bottom: 15px;
 }
+.back-to-main{
+  display: flex;
+}
 .modal-block-close-button{
   font-family: 'Arial';
   font-style: normal;
@@ -537,7 +541,7 @@ input[type="checkbox"]:checked + label::after {
   border: 1px solid #0981E6;
   border-radius: 5px;
   padding: 6px 25px;
-  max-width: 145px;
+  max-width: 220px;
   margin: 0 auto;
 
   transition: all 0.5s ease;
