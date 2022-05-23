@@ -137,7 +137,7 @@ footerFloorBody.append(footerBookshopLogoLink)
 // ------------Footer All Rights Reserved------------
 const allRIghts = document.createElement('p')
 allRIghts.className = 'all-rights'
-allRIghts.innerText = '© 2022 All Rights Reserved'
+allRIghts.innerText = '© Copyright 2022 Azat Farmanyan'
 footerFloorBody.append(allRIghts)
 
 // ------------Footer RsSchool logo------------
