@@ -37,6 +37,7 @@ bookSectionBody.append(catalogOfBooks)
 /// -----order books-------
 const orderBooks = document.createElement('div')
 orderBooks.className = ('order-books')
+orderBooks.setAttribute('id', 'order-books');
 bookSectionBody.append(orderBooks)
 
 // -----order books block title-------

@@ -101,7 +101,7 @@ navItems.append(register)
 const bookingCart = document.createElement('li')
 bookingCart.className = ('nav-item booking-cart')
 const bookingCartLink = document.createElement('a')
-bookingCartLink.href = 'https://azat-farmanyan.github.io/BookShop/pages/order_form/'
+bookingCartLink.href = '#order-books'
 const bookingCartImg = document.createElement('img')
 bookingCartImg.src = '../../assets/icons/shopping-cart.png'
 bookingCartImg.alt = 'booking cart logo'

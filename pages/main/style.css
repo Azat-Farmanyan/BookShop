@@ -314,8 +314,8 @@ transform-origin: bottom left;
 
 /*-------Book section-------------*/
 .book-section{
-  margin-top: 63px;
-  margin-bottom: 30px;
+  margin-top: 130px;
+  margin-bottom: 80px;
 }
 .book-section-body{
   display: flex;
