@@ -739,6 +739,7 @@ transform-origin: bottom left;
 /*-------Modal ShowMore Window-------------*/
 .modal-block{
   position: fixed;
+  z-index: 101;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
