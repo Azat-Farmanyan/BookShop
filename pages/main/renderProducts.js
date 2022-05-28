@@ -15,7 +15,7 @@ async function getProducts() {
 function renderProducts(productsArray) {
    productsArray.forEach((item, i) => {
       const productHTML = `
-      <div  class="card" data-id="${item.id}">
+      <div  class="card zoom" data-id="${item.id}">
                      <img class="product-img" src="${item.imageLink}" alt="Douglas Crockford">
                      <div class="card-body">
                         <div class="card-text-block">
